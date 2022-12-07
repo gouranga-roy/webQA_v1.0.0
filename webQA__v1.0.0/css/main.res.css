@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 991px) {
+  /* header main */
+  .search_box {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    width: 70%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .search_box.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .user_control {
+    justify-content: space-between;
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu-btn > span {
+    width: 25px;
+    height: 2px;
+    border-radius: 50rem;
+    background-color: var(--dark);
+  }
+
+  .search_box_icon {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+  }
+
+  /* sidebar */
+  .sidebar {
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease;
+  }
+
+  .sidebar.show {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* reboot bootstrap */
+  .btn {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+
+  .form-control,
+  .form-select,
+  .dropdown-item {
+    font-size: 14px;
+  }
+
+  /* common styles */
+  body {
+    font-size: 14px;
+  }
+
+  /* header main */
+  .search_box {
+    width: 100%;
+  }
+
+  /* sidebar */
+
+  .sidebar_menu > [class^="sidebar_menu"] {
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+}
+@media only screen and (max-width: 459px) {
+}
