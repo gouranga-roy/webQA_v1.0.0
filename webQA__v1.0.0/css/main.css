@@ -538,7 +538,10 @@ h6 {
 .loader-list-toggle{
   display: none;
 }
-.list-item-selet ul li span{
+.loader-list-toggle.active{
+  display: block;
+}
+.list-item-select ul li span{
   font-weight: 450;
   font-size: 13px;
   line-height: 16px;
@@ -822,7 +825,33 @@ h6 {
   color: var(--text-orange-red) !important;
   border: 1px solid var(--text-orange-red) !important;
 }
-
+.card-sniper-group{
+  display: flex;
+  justify-content: space-between;
+}
+.card-sniper-group .show-snip-btn button {
+  color: var(--white);
+  background: var(--primary);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 5px 7px;
+  padding-top: 2px;
+}
+.show-snip-btn button{
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.show-snip-btn button span{
+  padding-left: 5px;
+}
 .card-single-content p{
   font-size: 14px;
   font-weight: 450;

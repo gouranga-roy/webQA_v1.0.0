@@ -40,7 +40,7 @@ $(document).ready(function () {
   // show-details-btn
   $('.show-details-btn').click(function(){
     $('.loader-list-toggle').slideToggle();
-  });
+  }); 
 
   // Progress Bar failed
   var bar = new ProgressBar.Circle('.progress-failed', {
@@ -181,5 +181,4 @@ $(document).ready(function () {
     }
   });
   bar.animate(.7); 
-
 });
