@@ -432,15 +432,17 @@ h6 {
 .input-url-list::-webkit-scrollbar-thumb {
   background:#ccc;
 }
-​
-.input-url-list p{
+​.input-url-list ol{
+  margin: 0;
+}
+.input-url-list ol li{
+  padding-right: 10px;
   font-size: 14px;
   color: var(--text-gray);
 }
-.input-url-list p span{
-  padding-right: 10px;
-  font-size: 14px;
-  color: #CFCFCF;
+.input-url-list ol li::marker{
+  padding-right: 5px;
+  color: var(--text-gray);
 }
 .form-final-content{
   text-align: center;
