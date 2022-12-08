@@ -76,7 +76,10 @@ h6 {
 .btn {
   padding-inline: 16px;
 }
-
+.btn:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+}
 .btn_primary {
   background-color: var(--primary);
   color: var(--white);
@@ -585,19 +588,18 @@ h6 {
 }
 
 /* Meta Tag Start */
+.meta-tag-items{
+  margin-top: 20px;
+}
 .meta-tag-items button.nav-link{
   background: var(--white);
-  max-width: 160px;
+  max-width: 180px;
   width: 100%;
   box-shadow: 0px 4px 50px rgba(245, 247, 251, 0.25);
   border-radius: 16px;
   margin-right: 10px;
-  position: relative;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
   z-index: 1;
-}
-.meta-tag-items button.nav-link::before{
-  
 }
 .analysis-tab-btn .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   position: relative;
@@ -659,8 +661,16 @@ h6 {
 .tab-content-area{
   margin-top: 30px;
 }
+.tab-content-area .analysis-card{
+  margin-bottom:20px ;
+}
 .tab-content-area .card-header{
   background: var(--white);
+}
+.card-header-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .card-header-title h4{
   font-size: 16px;
@@ -673,6 +683,19 @@ h6 {
 .card-header-title .card-help{
   cursor: pointer;
 }
+.card-header-right button{
+  border: 1px solid var(--text-orange-red);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-orange-red);
+  padding: 3px 15px;
+}
+.card-header-right button:hover,
+.card-header-right button:focus{
+  color: var(--text-orange-red) !important;
+  border: 1px solid var(--text-orange-red) !important;
+}
+
 .card-single-content p{
   font-size: 14px;
   font-weight: 450;
@@ -683,7 +706,7 @@ h6 {
   background: rgba(148, 206, 156, 0.1);
   color: var(--text-lime-deep);
   font-size: 14px;
-  font-weight: 450px;
+  font-weight: 450 !important;
 }
 .card-inner-content .card{
   border: 0;
@@ -700,5 +723,94 @@ h6 {
   font-weight: 450;
   color: var(--text-gray);
   margin-bottom: 0;
+}
+.card-content-bottom{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.card-content-bottom .card-single-content{
+  margin-right: 20px;
+  color: var(--dark);
+  font-weight: 450;
+}
+
+/* card-hide-content */
+.card-hide-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-hide-content p{
+  font-size: 12px;
+  color: var(--text-gray);
+}
+.card-show-icon button{
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-gray);
+  font-weight: 500;
+  padding: 3px 7px;
+}
+.card-show-icon button span{
+  display: flex;
+  margin-right: 5px;
+}
+.card-text-link {
+  padding: 2px 0;
+}
+.card-text-link a{
+  color: #006621;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-single-text p:first-child{
+  font-size: 15px;
+  color: #681DA8;
+  font-weight: 400;
+  margin: 3px 0;
+}
+.card-single-text p:last-child{
+  color: var(--text-gray);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+/* Analysis Card Three */
+.card-single-content.badge-orange p a{
+  color: #6e6e6ea9;
+}
+.card-single-content.badge-orange .badge {
+  border: 1px solid var(--text-orange-red);
+  background: rgba(250, 84, 87, 0.05);
+  color: var(--text-orange-red);
+}
+.card-inner-problems .card{
+  background: #FEF6F6;
+  box-shadow: 0px 4px 50px rgba(245, 247, 251, 0.25);
+  border: 0;
+}
+.card-inner-problems .card h4{
+  font-size: 16px;
+  color: var(--text-orange-red);
+}
+.card-inner-problems .card ol{
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.card-inner-problems .card ol li{
+  font-size: 14px;
+  font-weight: 450;
+  color: var(--text-gray);
+  line-height: 24px;
+}
+.card-inner-problems .card ol li::marker{
+  color: var(--black);
+  font-weight: 500;
 }
 /* Meta Tag End */
