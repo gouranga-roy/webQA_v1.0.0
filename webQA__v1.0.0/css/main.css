@@ -236,11 +236,8 @@ h6 {
   padding-top: 15px;
 }
 
-/* Onboarding area */
-/* Form Area Start
-------------------------------*/
-/* Form Area Start
-------------------------------*/
+/* Onboarding Are Start
+--------------------------------------*/
 .onboard-form-head h4{
   color: var(--dark);
   font-size: 26px;
@@ -456,9 +453,137 @@ h6 {
 .form-final-content button{
   padding:7px 35px;
 }
+/* Onboarding Are End
+--------------------------------------*/
+
+/* loader Area Start
+-----------------------------------------*/
+.loader-card-title {
+  text-align: center;
+}
+.loader-img {
+  text-align: center;
+  margin-top: 38px;
+}
+.loader-card-title p{
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6E6E6E;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loader-card-title span{
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark);
+  margin-top: 11px;
+}
+.loader-card-title .progress{
+  margin-bottom: 11px;
+}
+.loader-card-title .loader-details{
+  max-width: 130px;
+  width: 100%;
+  margin: auto;
+}
+.loader-card-title .loader-details a{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #556080;
+  margin: 27px 0 77px 0;
+}
+.loader-details p{
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6E6E6E;
+}
+.list-title h3{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark);
+}
+.list-title{
+  border-bottom: 1px solid #E2E0F4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark);
+  margin: 0 0 10px 24px;
+}
+.loader-list ul{
+  margin: 0;
+  padding: 0;
+}
+.loader-list ul li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.loader-list ul li span{
+  margin-left: 9px;
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--dark);
+}
+.loader-list-items{
+  display: flex;
+  justify-content: space-around;
+}
+.loader-list-toggle{
+  display: none;
+}
+.list-item-selet ul li span{
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6E6E6E;
+  margin-left: 24px;
+}
+.list-title-right-mark{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid #E2E0F4;
+  margin-bottom: 10px;
+}
+.list-title-right-mark h3{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark);
+}
+.loader-title-single h2{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--dark);
+  margin: 20px 0 9px 0;
+}
+.loader-title-single h4{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 9px;
+}
+.loader-title-single p{
+  max-width: 260px;
+  margin: auto;
+  margin-bottom: 77px;
+}
+/* loader Area End
+-----------------------------------------*/
 
 /*  Analysis Page Css
-------------------------------- */
+--------------------------------------- */
 .report-generate{
   
 }

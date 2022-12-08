@@ -37,6 +37,11 @@ $(document).ready(function () {
     $(".sidebar").toggleClass("show");
   });
 
+  // show-details-btn
+  $('.show-details-btn').click(function(){
+    $('.loader-list-toggle').slideToggle();
+  });
+
   // Progress Bar failed
   var bar = new ProgressBar.Circle('.progress-failed', {
     strokeWidth: 10,
@@ -120,4 +125,61 @@ $(document).ready(function () {
     }
   });
   bar.animate(.5); 
+
+  // Progress Bar Loader passed
+  var bar = new ProgressBar.Circle('.loader-passed', {
+    strokeWidth: 10,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: 'var(--text-lime-deep)',
+    trailColor: 'rgba(250, 84, 87, 0.05)',
+    trailWidth: 10,
+    easing: 'easeOut',
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+      value: '0',
+      style: {
+        color: 'var(--dark)',
+        position:'absolute',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)',
+        fontSize:'16px',
+        fontWeight:'700'
+      },
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100));
+    }
+  });
+  bar.animate(.4); 
+
+  // Progress Bar Loader Failed
+  var bar = new ProgressBar.Circle('.loader-failed', {
+    strokeWidth: 10,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: 'var(--text-lime-deep)',
+    trailColor: 'rgba(250, 84, 87, 0.05)',
+    trailWidth: 10,
+    easing: 'easeOut',
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+      value: '0',
+      style: {
+        color: 'var(--dark)',
+        position:'absolute',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)',
+        fontSize:'16px',
+        fontWeight:'700'
+      },
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100));
+    }
+  });
+  bar.animate(.7); 
+
 });
