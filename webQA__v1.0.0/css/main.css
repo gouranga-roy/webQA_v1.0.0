@@ -104,6 +104,17 @@ h6 {
   color: var(--text-gray);
   background-color: transparent;
 }
+.btn_denger {
+  background-color: var(--text-orange-red);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn_denger:hover {
+  background-color: var(--text-orange-red);
+  color: var(--white);
+}
 
 .profile_icon {
   border-radius: 50%;
@@ -234,6 +245,197 @@ h6 {
   width: 100%;
   float: right;
   padding-top: 15px;
+}
+
+
+/******************************************************************* 
+                      Profile.html Page Css
+*******************************************************************/
+
+/******************************************************************* 
+                      Profile Section Area Css Start 
+*******************************************************************/
+.form-body{
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  box-shadow: 0px 0px 50px var(--bg-mostly-white-200);
+  border-radius: 16px;
+  padding: 1.3rem 2rem;
+}
+.from-title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--dark);
+  padding-bottom: 10px;
+}
+.profile-single-input .form-text{
+  text-align: right;
+}
+.form-text {
+	font-size: 13px;
+}
+.profile-single-input label{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 8px;
+  color: var(--dark);
+}
+.profile-single-input{
+  margin-bottom: 15px;
+}
+.update-profile{
+  margin-top: 10px;
+}
+.password-section{
+  margin-top: 25px;
+}
+.update-password2{
+  margin-top: 10px;
+}
+.update-password3{
+  margin-top: 30px;
+}
+.delete-account{
+  margin-top: 30px;
+}
+.profile-single-input{
+  position: relative;
+}
+.profile-single-input .eye-icon{
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  transform: translateY(-50%);
+  right: 20px;
+  height: 15px;
+  width: 22px;
+  cursor: pointer;
+  visibility: visible;
+}
+/******************************************************************* 
+                      Profile2.html Page Css
+*******************************************************************/
+.not-metch-pass{
+  border-color: var(--text-orange-red);
+}
+.form-text-color{
+  text-align: right;
+  color: var(--text-orange-red);
+  margin-top: -10px;
+}
+/******************************************************************* 
+                      Profile3.html Page Css
+*******************************************************************/
+.success-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: var(--bg-lime);
+  border: 1px solid var(--border-lime);
+  border-radius: 8px;
+}
+.success-section p{
+  margin-bottom: 3px;
+}
+.profile-single-input input::placeholder{
+  margin-bottom: -10px;
+}
+/******************************************************************* 
+                      Profile3.html Page Css
+*******************************************************************/
+.edit-profile,
+.change-password,
+.delete-center{
+  text-decoration: none;
+  display: block;
+  color: var(--primary);
+}
+.edit-profile{
+  margin-top: -15px;
+}
+.delete-center{
+  text-align: center;
+  padding: 35px 0;
+}
+/******************************************************************* 
+                      Profile3.html Page Css
+*******************************************************************/
+.modal-dialog{
+  max-width: 610px;
+  width: 100%;
+}
+.modal-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal-header span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--text-orange-red);
+  color: var(--white);
+  margin-right: 10px;
+}
+.modal-header h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--dark);
+}
+.modal-body span{
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark);
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+.modal-body p{
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-gray);
+}
+.back-modal{
+  border: none;
+  background: none;
+}
+/******************************************************************* 
+                      Profile4.html Page Css
+*******************************************************************/
+.modal-body .form-check-input:checked {
+	background-color: var(--primary);
+	border-color: none;
+}
+.modal-body .form-check-input[type=radio]:focus {
+  box-shadow: none;
+}
+.back-modal{
+  margin-right: 45px;
+}
+.profile-textarea textarea{
+  height: 84px;
+  width: 100%;
+}
+.profile-textarea p{
+  text-align: right;
+}
+.modal-body .form-check{
+  padding-bottom: 5px;
+  padding-top: 7px;
 }
 
 /* Onboarding Are Start
@@ -534,6 +736,7 @@ h6 {
 .loader-list-items{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .loader-list-toggle{
   display: none;
@@ -627,9 +830,11 @@ h6 {
 .download-single-item{
   display: flex;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
-.download-single-link{
-  flex-basis: 50%;
+.download-single-link {
+  max-width: 140px;
+  width: 100%;
 }
 .download-single-link a{
   text-decoration: none;
@@ -670,6 +875,7 @@ h6 {
   align-items: center;
   justify-content: flex-end;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .control-show button, 
 .control-hide button {
@@ -680,6 +886,7 @@ h6 {
   padding-top: 4px;
   margin-left: 10px;
   position: relative;
+  width: 141px;
 }
 .control-show button::after{
   content: "";
@@ -719,7 +926,7 @@ h6 {
 
 /* Meta Tag Start */
 .meta-tag-items{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .meta-tag-items button.nav-link{
   background: var(--white);
@@ -727,9 +934,13 @@ h6 {
   width: 100%;
   box-shadow: 0px 4px 50px rgba(245, 247, 251, 0.25);
   border-radius: 16px;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
   z-index: 1;
+}
+.meta-tag-items button.nav-link:last-child{
+  margin-right: 0;
 }
 .analysis-tab-btn .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   position: relative;

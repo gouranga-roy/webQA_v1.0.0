@@ -3,6 +3,9 @@
 @media only screen and (max-width: 1199px) {
 }
 @media only screen and (max-width: 991px) {
+  .inner_content {
+    max-width: calc(100% - 0px);
+  }
   /* header main */
   .search_box {
     position: absolute;
@@ -91,8 +94,70 @@
   .sidebar_menu > [class^="sidebar_menu"] {
     padding: 16px;
   }
+
+  /* Analysis page */
+  .analysis-link-progress {
+    margin-bottom: 10px;
+  }
+  .card-content-bottom {
+    margin-bottom: 10px;
+  }
+  .show-snip-btn.snippet-url {
+    margin-top: 10px;
+  }
+
+  /* Onboard Page */
+  .onboard-main-items{
+    flex-direction: column-reverse;
+  }
+  .form-image{
+    margin-bottom: 30px;
+  }
+
 }
 @media only screen and (max-width: 575px) {
+  .progress-download {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .download-items {
+    flex-basis: 100% !important;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .progress-items {
+    margin-right: 0;
+  }
+  .download-single-item {
+    justify-content: center;
+  }
+  .progress-download {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  /* Profile Page */
+  .modal-dialog {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+  }
 }
 @media only screen and (max-width: 459px) {
+  /* Analysis page */
+  .meta-tag-items .nav-tabs {
+    justify-content: space-around;
+  }
+  .meta-tag-items button.nav-link {
+    max-width: 160px;
+    margin-right: 0px;
+  }
+  .tab-btn-content span {
+    font-size: 12px;
+  }
+  .form-card-title h3 {
+    font-size: 20px;
+  }
 }
