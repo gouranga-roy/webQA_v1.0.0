@@ -835,19 +835,14 @@ h6 {
   font-size: 12px;
   font-weight: 500;
   display: flex;
-  align-items: center;
-  padding: 5px 7px;
-  padding-top: 2px;
-}
-.show-snip-btn button{
-  background: var(--primary);
-  color: var(--white);
+  justify-content: space-between;
+  padding: 3px 5px 6px 6px;
   border-radius: 20px;
   border: 0;
   outline: 0;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
+  align-items: center;
+  width: 115px;
+  align-items: center;
 }
 .show-snip-btn button span{
   padding-left: 5px;
@@ -856,6 +851,7 @@ h6 {
   font-size: 14px;
   font-weight: 450;
   color: var(--text-gray);
+  max-width: 930px;
 }
 .card-single-content p .badge{
   border: 1px solid var(--text-lime-deep);
@@ -968,5 +964,33 @@ h6 {
 .card-inner-problems .card ol li::marker{
   color: var(--black);
   font-weight: 500;
+}
+.problem-des-gray h4{
+  color: var(--dark) !important;
+}
+.problem-des-gray p{
+  font-size: 14px;
+  font-weight: 450;
+  color: var(--text-gray);
+}
+.card-attr p a{
+  color: #6e6e6ea9;
+  font-size: 14px;
+  font-weight: 450;
+}
+.card-actual-url p{
+  color: var(--text-gray);
+  font-size: 14px;
+  line-height: 24px;
+}
+.card-actual-url p span{
+  color: var(--dark);
+  font-weight: 500;
+  max-width: 110px;
+  width: 100%;
+  display: inline-block;
+}
+.card-actual-problem .card{
+  background: #FEF6F6;
 }
 /* Meta Tag End */
