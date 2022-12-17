@@ -148,11 +148,11 @@
 @media only screen and (max-width: 459px) {
   /* Analysis page */
   .meta-tag-items .nav-tabs {
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
   .meta-tag-items button.nav-link {
-    max-width: 160px;
-    margin-right: 0px;
+    /* max-width: 160px;
+    margin-right: 0px; */
   }
   .tab-btn-content span {
     font-size: 12px;

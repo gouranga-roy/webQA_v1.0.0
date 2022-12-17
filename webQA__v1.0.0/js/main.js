@@ -42,6 +42,28 @@ $(document).ready(function () {
     $('.loader-list-toggle').slideToggle();
   }); 
 
+  // owl-navTab
+  $('.owl-navTab').owlCarousel({
+    loop:true,
+    autoplay:false,
+    items:6,
+    margin:10,
+    nav:false,
+    // autoplayTimeout:3000,
+    // autoplayHoverPause:true,
+    // responsive:{
+    //   0:{
+    //       items:1,
+    //   },
+    //   767:{
+    //      items:2,
+    //  },
+    //   1000:{
+    //       items:3,
+    //   }
+    // }
+ });
+
   // Progress Bar failed
   var bar = new ProgressBar.Circle('.progress-failed', {
     strokeWidth: 10,
