@@ -1197,6 +1197,10 @@ h6 {
 .card-actual-problem .card {
   background: #fef6f6;
 }
+.custom-tooltip-meta{
+  --bs-tooltip-bg: var(--white);
+  --bs-tooltip-color: var(--text-gray);
+}
 /* Meta Tag End */
 
 .progress-bar_primary {
