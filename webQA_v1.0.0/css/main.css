@@ -810,6 +810,10 @@ h6 {
 .progress-items {
   flex-basis: 50%;
 }
+#failed-circle,
+#warning-circle{
+  margin-right: 25px;
+}
 .download-items {
   flex-basis: 50%;
 }
@@ -830,6 +834,123 @@ h6 {
 }
 .download-single-link a span {
   margin-right: 8px;
+}
+/* performance Nav Item */
+.performance-score{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 55px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+}
+.performance-text{
+  max-width: 200px;
+  width: 100%;
+}
+.performance-text ul li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+  line-height: 30px;
+  padding-left: 18px;
+  position: relative;
+}
+.performance-text ul li::before{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) matrix(1, 0, 0, -1, 0, 0);
+  background: #4EB37B;
+  border-radius: 2px;
+}
+.performance-text ul li:nth-child(2):before{
+  background: #ECA059;
+}
+.performance-text ul li:nth-child(3):before{
+  background: #E52F34;
+}
+.performance-text ul li:last-child{
+  border-bottom: 0;
+}
+.performance-text ul li span{
+  font-size: 14px;
+  font-weight: 450;
+  color: var(--text-gray);
+  opacity: .7;
+}
+.performance-text ul li span:last-child{
+  opacity: 1;
+  color: #4A4A4A;
+  width: 45px;
+}
+#performance-circle{
+  background: #E9FAF1;
+  border-radius: 50%;
+}
+.performance-desktop .performance-btn{
+  float: right;
+}
+.performance-single-text{
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+}
+.performance-single-text h4{
+  color: var(--text-gray);
+  font-size: 16px;
+  font-weight: 450;
+}
+.performance-single-text p{
+  font-size: 13px;
+  font-weight: 450;
+  color: var(--text-gray);
+  line-height: 20px;
+}
+.performance-single-text p a{
+  text-decoration: none;
+}
+.performance-mobile{}
+.performance-btn button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.performance-btn button span{
+  padding-left: 7px;
+  font-size: 13px;
+  font-weight: 450;
+  transition: all .3s ease;
+  color: var(--text-gray);
+}
+.performance-mobile-img{
+  margin-top: 17px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.performance-mobile-img svg{
+  background: #FFFFFF;
+  border: 1px solid #E2E0F4;
+  box-shadow: 0px 0px 20px #E6EBF5;
+  border-radius: 10px;
+  padding: 7px;
+}
+.performance-btn button:hover,
+.performance-btn button:hover span,
+.performance-btn button.active,
+.performance-btn button.active span{
+  background: #F2F5F9;
+  color: var(--primary);
 }
 
 /* Progress Bar */
