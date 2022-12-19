@@ -250,6 +250,102 @@ $(document).ready(function () {
     'range': [0, 100],
   }).radialProgress("to", {'perc': 98, 'time': 3000});
 
+  // lighthouse-performance
+  jQuery("#lighthouse-performance").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '28',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 57, 'time': 3000});
+
+  // lighthouse-accessibility
+  jQuery("#lighthouse-accessibility").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 87, 'time': 3000});
+
+  // lighthouse-best
+  jQuery("#lighthouse-best").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 97, 'time': 3000});
+
+  // lighthouse-eso
+  jQuery("#lighthouse-eso").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#64B240',
+    'background':'#FAF8E9',
+    'color' : '#64B240',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 90, 'time': 3000});
+
+  // lighthouse-performance2
+  jQuery("#lighthouse-performance2").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '28',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 57, 'time': 3000});
+
+  // lighthouse-accessibility2
+  jQuery("#lighthouse-accessibility2").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 87, 'time': 3000});
+
+  // lighthouse-best2
+  jQuery("#lighthouse-best2").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 97, 'time': 3000});
+
+  // lighthouse-eso2
+  jQuery("#lighthouse-eso2").radialProgress("init", {
+    'size': 80,
+    'fill': 5,
+    'font-family' :'450',
+    'font-size' : '25',
+    'text-color': '#64B240',
+    'background':'#FAF8E9',
+    'color' : '#64B240',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 90, 'time': 3000});
+
 
 
   function multistepForm() {
