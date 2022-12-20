@@ -250,6 +250,30 @@ $(document).ready(function () {
     'range': [0, 100],
   }).radialProgress("to", {'perc': 98, 'time': 3000});
 
+  // Performance-circle2
+  jQuery("#performance-circle2").radialProgress("init", {
+    'size': 120,
+    'fill': 8,
+    'font-family' :'450',
+    'font-size' : '40',
+    'text-color': '#ECA059',
+    'background':'#FAF8E9',
+    'color' : '#ECA059',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 70, 'time': 3000});
+
+  // Performance-circle2
+  jQuery("#performance-circle3").radialProgress("init", {
+    'size': 120,
+    'fill': 8,
+    'font-family' :'450',
+    'font-size' : '40',
+    'text-color': '#E52F34',
+    'background':'#FAE9E9',
+    'color' : '#E52F34',
+    'range': [0, 100],
+  }).radialProgress("to", {'perc': 30, 'time': 3000});
+
   // lighthouse-performance
   jQuery("#lighthouse-performance").radialProgress("init", {
     'size': 80,
