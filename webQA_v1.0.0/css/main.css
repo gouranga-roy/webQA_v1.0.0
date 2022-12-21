@@ -1381,6 +1381,104 @@ th.table-column-five{
   stroke: var(--white);
   background: #1E63B8;
 }
+.badge-green{
+  border: 1px solid var(--text-lime-deep);
+  background: rgba(148, 206, 156, 0.1);
+  color: var(--text-lime-deep);
+  font-size: 12px;
+  font-weight: 450 !important;
+  width: 37px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  display: block;
+}
+.badge-red{
+  border: 1px solid var(--text-orange-red);
+  background: #FEF6F6;
+  color: var(--text-orange-red);
+  font-size: 12px;
+  font-weight: 450 !important;
+  width: 37px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  display: block;
+}
+.row-orange-bg{
+  background: #FEF6F6;
+}
+.analysis-table-image table{
+  min-width: 1200px;
+}
+.analysis-table-image .table-image-link{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 450;
+  color: var(--primary);
+}
+.analysis-table-image .table-image-link span{
+  margin-right: 7px;
+}
+.analysis-table-image thead{
+  background-color: #F1F5FF;
+  font-size: 14px;
+  font-weight: 450;
+  color: #222222;
+}
+.analysis-table-image td{
+  color: var(--text-gray);
+  font-size: 14px;
+  font-weight: 450;
+}
+.analysis-table-image .thead-one{
+  width: 40px;
+  text-align: center;
+}
+.analysis-table-image .thead-two,
+.analysis-table-image .thead-fore,
+.analysis-table-image .thead-six{
+  width: 110px;
+}
+.analysis-table-image .thead-three,
+.analysis-table-image .thead-five{
+  width: 350px;
+}
+.analysis-table-image .thead-siven{
+  width: 400px;
+}
+.meta-link-itemList li:nth-child(4){
+  color: var(--text-orange-red);
+}
+.meta-link-itemList li::marker{
+  color: var(--text-gray);
+}
+.meta-link-itemList .meta-text-right {
+  max-width: 212px;
+  width: 100%;
+  float: right;
+  display: block;
+}
+.meta-link-itemList .meta-right-text{
+  max-width: 100px;
+  width: 100%;
+}
+.meta-link-itemList ol li{
+  display: flex;
+  justify-content: space-between;
+}
+.meta-list-broken{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  margin-top: 20px;
+  color: var(--text-gray);
+  border-bottom: 1px solid var(--text-gray);
+}
+.meta-list-broken:focus{
+  border-bottom: 1px solid var(--text-gray);
+  
+}
 /* Progress Bar */
 .progress-items {
   display: flex;
@@ -1789,6 +1887,9 @@ th.table-column-five{
   border: 1px solid var(--text-orange-red);
   background: rgba(250, 84, 87, 0.05);
   color: var(--text-orange-red);
+}
+.card-inner-problems ol{
+  margin-left: 10px;
 }
 .card-inner-problems .card {
   background: #fef6f6;
