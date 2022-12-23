@@ -348,7 +348,7 @@
             </li>
           </ul>
           <ul class="sidebar_menu__bottom">
-            <li class="sidebar_menu__item">
+            <li onclick="openNav()" class="sidebar_menu__item">
               <a href="#" class="sidebar_menu__item_link">
                 <svg
                   width="13"
@@ -2073,6 +2073,48 @@
       </div>
     </main>
     <!-- main sections ends -->
+
+    <div id="ideaSidenav" class="ideasidenav">
+      <div class="slivenavHead">
+        <span>Submit your idea</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+      <div class="ideaSideForm">
+        <form action="">
+          <div class="idea-singel-input">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" value="Rahul Singh">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email Address" value="rahulsingh@gmail.com">
+            <label>Select an Option</label>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Option 1</option>
+              <option value="1">Option 2</option>
+              <option value="2">Option 3</option>
+              <option value="3">Option 4</option>
+            </select>
+            <label for="url">URL</label>
+            <input type="url" class="form-control" id="url" placeholder="URL" value="www.https://setmore.com">
+            <label for="message">Message</label>
+            <textarea class="form-control mb-2" rows="3" id="message"></textarea>
+            <label>Attachments</label>
+            <div class="input-attachfile">
+              <label for="attachments">Attach your files</label>
+              <input type="file" class="form-control" id="attachments">
+            </div>
+            <label>How important is this to you?</label>
+            <div class="nav-ideabtn">
+              <button>Nice to have</button>
+              <button class="active">Important</button>
+              <button>Critical</button>
+            </div>
+            <input type="submit" value="Send" class="submitBtn">
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <!-- Use any element to open the sidenav -->
 
     <!-- jQuery -->
     <script src="./vendor/jQurey/jquery-3.6.1.min.js"></script>

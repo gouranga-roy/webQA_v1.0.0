@@ -42,166 +42,6 @@ $(document).ready(function () {
     $(".loader-list-toggle").slideToggle();
   });
 
-  // function progressBars() {
-  //   if (
-  //     typeof ProgressBar === null ||
-  //     typeof ProgressBar === "undefined" ||
-  //     typeof ProgressBar === undefined
-  //   )
-  //     return;
-
-    // Progress Bar failed
-    // if ($(".progress-failed").length) {
-    //   var bar = new ProgressBar.Circle(".progress-failed", {
-    //     strokeWidth: 10,
-    //     easing: "easeInOut",
-    //     duration: 2000,
-    //     color: "#FA5457",
-    //     trailColor: "rgba(250, 84, 87, 0.05)",
-    //     trailWidth: 10,
-    //     easing: "easeOut",
-    //     svgStyle: { width: "100%", height: "100%" },
-    //     text: {
-    //       value: "0",
-    //       style: {
-    //         color: "var(--dark)",
-    //         position: "absolute",
-    //         top: "50%",
-    //         left: "50%",
-    //         transform: "translate(-50%,-50%)",
-    //         fontSize: "16px",
-    //         fontWeight: "700",
-    //       },
-    //     },
-    //     step: (state, bar) => {
-    //       bar.setText(Math.round(bar.value() * 100));
-    //     },
-    //   });
-    //   bar.animate(0.1);
-    // }
-
-    // Progress Bar warnings
-    // if ($(".progress-warnings").length) {
-    //   var bar = new ProgressBar.Circle(".progress-warnings", {
-    //     strokeWidth: 10,
-    //     easing: "easeInOut",
-    //     duration: 2000,
-    //     color: "#FA5457",
-    //     trailColor: "rgba(250, 84, 87, 0.05)",
-    //     trailWidth: 10,
-    //     easing: "easeOut",
-    //     svgStyle: { width: "100%", height: "100%" },
-    //     text: {
-    //       value: "0",
-    //       style: {
-    //         color: "var(--dark)",
-    //         position: "absolute",
-    //         top: "50%",
-    //         left: "50%",
-    //         transform: "translate(-50%,-50%)",
-    //         fontSize: "16px",
-    //         fontWeight: "700",
-    //       },
-    //     },
-    //     step: (state, bar) => {
-    //       bar.setText(Math.round(bar.value() * 100));
-    //     },
-    //   });
-    //   bar.animate(0.2);
-    // }
-
-    // Progress Bar passed
-    // if ($(".progress-passed").length) {
-    //   var bar = new ProgressBar.Circle(".progress-passed", {
-    //     strokeWidth: 10,
-    //     easing: "easeInOut",
-    //     duration: 2000,
-    //     color: "var(--text-lime-deep)",
-    //     trailColor: "rgba(250, 84, 87, 0.05)",
-    //     trailWidth: 10,
-    //     easing: "easeOut",
-    //     svgStyle: { width: "100%", height: "100%" },
-    //     text: {
-    //       value: "0",
-    //       style: {
-    //         color: "var(--dark)",
-    //         position: "absolute",
-    //         top: "50%",
-    //         left: "50%",
-    //         transform: "translate(-50%,-50%)",
-    //         fontSize: "16px",
-    //         fontWeight: "700",
-    //       },
-    //     },
-    //     step: (state, bar) => {
-    //       bar.setText(Math.round(bar.value() * 100));
-    //     },
-    //   });
-    //   bar.animate(0.5);
-    // }
-
-    // // Progress Bar Loader passed
-    // if ($(".loader-passed").length) {
-    //   var bar = new ProgressBar.Circle(".loader-passed", {
-    //     strokeWidth: 10,
-    //     easing: "easeInOut",
-    //     duration: 2000,
-    //     color: "var(--text-lime-deep)",
-    //     trailColor: "rgba(250, 84, 87, 0.05)",
-    //     trailWidth: 10,
-    //     easing: "easeOut",
-    //     svgStyle: { width: "100%", height: "100%" },
-    //     text: {
-    //       value: "0",
-    //       style: {
-    //         color: "var(--dark)",
-    //         position: "absolute",
-    //         top: "50%",
-    //         left: "50%",
-    //         transform: "translate(-50%,-50%)",
-    //         fontSize: "16px",
-    //         fontWeight: "700",
-    //       },
-    //     },
-    //     step: (state, bar) => {
-    //       bar.setText(Math.round(bar.value() * 100));
-    //     },
-    //   });
-    //   bar.animate(0.4);
-    // }
-
-    // Progress Bar Loader Failed
-  //   if ($(".loader-failed").length) {
-  //     var bar = new ProgressBar.Circle(".loader-failed", {
-  //       strokeWidth: 10,
-  //       easing: "easeInOut",
-  //       duration: 2000,
-  //       color: "var(--text-lime-deep)",
-  //       trailColor: "rgba(250, 84, 87, 0.05)",
-  //       trailWidth: 10,
-  //       easing: "easeOut",
-  //       svgStyle: { width: "100%", height: "100%" },
-  //       text: {
-  //         value: "0",
-  //         style: {
-  //           color: "var(--dark)",
-  //           position: "absolute",
-  //           top: "50%",
-  //           left: "50%",
-  //           transform: "translate(-50%,-50%)",
-  //           fontSize: "16px",
-  //           fontWeight: "700",
-  //         },
-  //       },
-  //       step: (state, bar) => {
-  //         bar.setText(Math.round(bar.value() * 100));
-  //       },
-  //     });
-  //     bar.animate(0.7);
-  //   }
-  // }
-  // progressBars();
-
   // Failed-circle
   jQuery("#failed-circle").radialProgress("init", {
     'size': 80,
@@ -440,6 +280,11 @@ $(document).ready(function () {
   });
 });
 
-// Tooltip
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+// off canvas menu
+function openNav() {
+  document.getElementById("ideaSidenav").style.width = "372px";
+}
+function closeNav() {
+  document.getElementById("ideaSidenav").style.width = "0";
+}
+

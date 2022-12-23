@@ -72,7 +72,9 @@ h5,
 h6 {
   color: var(--dark);
 }
-
+.table-responsive{
+  white-space: nowrap;
+}
 .btn {
   padding-inline: 16px;
   font-weight: 500;
@@ -1103,29 +1105,7 @@ h6 {
   color: var(--text-orange-red) !important;
 
 }
-
 /* Performance Meta */
-th.table-column-one{
-  min-width: 20px;
-  width: 100%;
-  text-align: center;
-}
-th.table-column-two{
-  min-width: 150px;
-  width: 100%;
-}
-th.table-column-three{
-  min-width:520px;
-  width: 100%;
-}
-th.table-column-fore{
-  min-width: 140px;
-  width: 100%;
-}
-th.table-column-five{
-  min-width: 325px;
-  width: 100%;
-}
 .meta-graph-table ol{
   margin: 0;
 }
@@ -1430,22 +1410,6 @@ th.table-column-five{
   color: var(--text-gray);
   font-size: 14px;
   font-weight: 450;
-}
-.analysis-table-image .thead-one{
-  width: 40px;
-  text-align: center;
-}
-.analysis-table-image .thead-two,
-.analysis-table-image .thead-fore,
-.analysis-table-image .thead-six{
-  width: 110px;
-}
-.analysis-table-image .thead-three,
-.analysis-table-image .thead-five{
-  width: 350px;
-}
-.analysis-table-image .thead-siven{
-  width: 400px;
 }
 .meta-link-itemList li:nth-child(4){
   color: var(--text-orange-red);
@@ -1979,4 +1943,114 @@ th.table-column-five{
 
 .progress-bar_primary {
   background: linear-gradient(90deg, #1e63b8 0.31%, #01b4bc 74.44%);
+}
+
+
+/* The side navigation menu */
+.ideasidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 72px;
+  left: 68px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background: #FFFFFF;
+  border: 1px solid #E4E3EF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.ideasidenav p{
+  padding: 20px;
+}
+.slivenavHead span{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  padding-top: 10px;
+  padding-left: 15px;
+  display: block;
+}
+
+.ideasidenav .closebtn {
+  position: absolute;
+  top: -4px;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #D5D5DD;
+  transition: all .3s;
+}
+.idea-singel-input{
+  padding: 15px;
+}
+.idea-singel-input label{
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 450;
+}
+.idea-singel-input input{
+  color: #575757;
+  font-size: 16px;
+  font-weight: 450;
+  margin-bottom: 7px;
+}
+.ideasidenav .closebtn:hover{
+  color: var(--text-gray);
+}
+.input-attachfile label{
+  color: #C5C5C5;
+  font-size: 16px;
+  font-weight: 450;
+  margin-bottom: 7px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px dashed #D3D5D8;
+  border-radius: 7px;
+  padding: 7px;
+}
+.input-attachfile input{
+  display: none;
+}
+.nav-ideabtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+.nav-ideabtn button{
+  background: #FFFFFF;
+  border: 1px solid #D3D5D8;
+  border-radius: 7px;
+  color: #8F8F8F;
+  font-size: 14px;
+  font-weight: 450;
+  width: 98px;
+  transition: all .3s;
+  height: 40px;
+}
+.nav-ideabtn button:hover,
+.nav-ideabtn button.active {
+  background: #5CAE35;
+  color: #ffffff;
+}
+.ideaSideForm .submitBtn{
+  background: #1E63B8;
+  backdrop-filter: blur(25px);
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+  outline: 0;
+  margin-top: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
