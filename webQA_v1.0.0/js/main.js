@@ -278,6 +278,88 @@ $(document).ready(function () {
       passwordField.attr("type", "password");
     }
   });
+
+  $('#analysisEx21').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+  $('#analysisEx22').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+  $('#analysisEx23').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+  $('#analysisEx24').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+  $('#analysisEx25').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+  $('#analysisEx26').slider({
+    id: 'slider22',
+    min: 0,
+    max: 100,
+    step: 1,
+    value: 85,
+    rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
+      { "start": 7, "end": 8, "class": "category2" },
+      { "start": 17, "end": 19 },
+      { "start": 17, "end": 24 },
+      { "start": -3, "end": 19 }
+    ]
+  });
+
+
+      
 });
 
 // off canvas menu

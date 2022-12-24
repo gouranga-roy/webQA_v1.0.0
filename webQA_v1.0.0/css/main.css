@@ -2119,43 +2119,69 @@ h6 {
   color: #CCCCD3;
 }
 
-/* range collected css */
+/* Range css   */
+
 #slider22 .slider-selection {
 	background: #81bfde;
 }
-
 #slider22 .slider-rangeHighlight {
 	background: #f70616;
 }
-
 #slider22 .slider-rangeHighlight.category1 {
     background: #FF9900;
 }
-
 #slider22 .slider-rangeHighlight.category2 {
     background: #99CC00;
 }
-
-.tooltip .arrow {
+.analysis-range1{
+  max-width: 210px;
+  width: 100%;
+}
+.analysis-range1 .slider.slider-horizontal .slider-track{
+  height: 5px;
+}
+.analysis-range1 .slider-handle{
+  height: 9px;
+  width: 9px;
+  background-color: var(--dark);
+  top: 3px;
+  background-image: none;
+}
+.analysis-range1 .tooltip{
   position: absolute;
-  display: block;
-  width: .8rem;
-  height: .4rem;
+  display: none;
 }
-.bs-tooltip-auto[x-placement^=top] .arrow, .bs-tooltip-top .arrow {
-  bottom: 0;
+.analysis-range1 #slider22 .slider-rangeHighlight.category1 {
+  left: 0 !important;
+  width: 33.33% !important;
+  background: #50B77E;
 }
-.slider .tooltip.bs-tooltip-top .arrow, .slider .tooltip.bs-tooltip-bottom .arrow {
-  left: -.4rem;
+.analysis-range1 #slider22 .slider-rangeHighlight.category2{
+  left: 33.33% !important;
+  width: 33.33% !important;
+  background: #F1A35B;
 }
-.tooltip .arrow::before {
-  position: absolute;
-  content: "";
-  border-color: transparent;
-  border-style: solid;
+.analysis-range1 #slider22 .slider-rangeHighlight {
+	left: 66.66% !important;
+  width: 33.33% !important;
+  background: #EA3035;
 }
-.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
-  top: 0;
-  border-width: .4rem .4rem 0;
-  border-top-color: #000;
+.analysis-range1 .slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
+  margin-left: -5px;
+}
+.analysis-range1 .slider-handle.min-slider-handle.round {
+  display: none;
+}
+.analysis-rangeNum {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 141px;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+}
+.analysis-rangeNum span{
+  margin-top: 10px !important;
+  margin-bottom: -5px;
 }
