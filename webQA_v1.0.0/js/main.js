@@ -278,22 +278,7 @@ $(document).ready(function () {
       passwordField.attr("type", "password");
     }
   });
-
-  
-// With JQuery
-$('#analysis_slide1').slider({
-  id: 'slider22',
-  min: 0,
-  max: 20,
-  step: 1,
-  value: 14,
-  rangeHighlights: [{ "start": 2, "end": 5, "class": "category1" },
-                    { "start": 7, "end": 8, "class": "category2" },
-                    { "start": 17, "end": 19 },
-                    { "start": 17, "end": 24 },
-                    { "start": -3, "end": 19 }]});
 });
-
 
 // off canvas menu
 function openNav() {
@@ -302,6 +287,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("ideaSidenav").style.width = "0";
 }
-
-
-<img src="assets/images/title-hedignicon.png" alt=""></img>
