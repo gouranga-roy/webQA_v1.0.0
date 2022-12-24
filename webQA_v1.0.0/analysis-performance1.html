@@ -7,6 +7,8 @@
     <title>Analysis</title>
     <!-- bootstrap styles -->
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- bootstrap slider styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom styles -->
     <link rel="stylesheet" href="./css/font-styles.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -2007,6 +2009,19 @@
                                   <p>First Contentful Paint</p>
                                   <h2>0.3 s</h2>
                                   <span>Lorem Ipsum is simply dummy text of the printing industry. <a href="#">Learn more</a></span>
+                                  <div class="performance-range">
+                                    <input id="analysis_slide1" type="text"
+                                    data-slider-id="slider22"
+                                    data-slider-min="0"
+                                    data-slider-max="20"
+                                    data-slider-step="1"
+                                    data-slider-value="14"
+                                    data-slider-rangeHighlights='[{ "start": 2, "end": 5, "class": "category1" },
+                                                                  { "start": 7, "end": 8, "class": "category2" },
+                                                                  { "start": 17, "end": 19 },
+                                                                  { "start": 17, "end": 24 }, //not visible -  out of slider range
+                                                                  { "start": -3, "end": 19 }]' />
+                                  </div>
                                 </li>
                                 <li>
                                   <p>Time to Interactive</p>
@@ -2169,6 +2184,8 @@
     <script src="./vendor/jQurey/jquery-3.6.1.min.js"></script>
     <!-- bootstrap scripts -->
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap slider scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- font awesome scripts -->
     <script src="./vendor/fontawesome/js/all.min.js" async defer></script>
     <!-- Progressbar scripts -->

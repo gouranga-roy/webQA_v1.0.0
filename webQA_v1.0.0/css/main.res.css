@@ -59,11 +59,27 @@
     visibility: hidden;
     transition: 300ms ease;
   }
-
   .sidebar.show {
     left: 0;
     opacity: 1;
     visibility: visible;
+  }
+  .ideasidenav {
+    left: -2px;
+    top: 53px;
+  }
+  .performance-core-items ul {
+    padding-left: 20px;
+  }
+  .performance-grid-items {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .lighthose-circle-content {
+    width: 50%;
+  }
+  .meta-list-brokenBody .modal-dialog {
+    top: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -113,6 +129,19 @@
   .form-image{
     margin-bottom: 30px;
   }
+  .on-page-border{
+    border: 0;
+    margin-bottom: 40px;
+  }
+  .performance-core-items ul {
+    flex-wrap: wrap;
+  }
+  .performance-list-two .performance-core-items ul li {
+    width: 50%;
+  }
+  .social-review .card{
+    margin-bottom: 15px;
+  }
 
 }
 @media only screen and (max-width: 575px) {
@@ -144,6 +173,25 @@
     margin: auto;
     padding: 0 10px;
   }
+  .performance-list-two .performance-core-items ul li {
+    width: 100%;
+  }
+  .lighthose-circle-content {
+    width: 100%;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .lighthouse-single-circle {
+    justify-content: center;
+  }
+  
+  .card-inner-content p {
+    font-size: 12px;
+  }
+  .meta-list-brokenBody .modal-dialog {
+    top: 60px;
+  }
+  
 }
 @media only screen and (max-width: 459px) {
   /* Analysis page */
@@ -160,4 +208,6 @@
   .form-card-title h3 {
     font-size: 20px;
   }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
